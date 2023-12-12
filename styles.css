@@ -61,7 +61,8 @@ main {
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: ;
+    background-color: #00628B;
+    border-radius: 3px;
 }
 
 .language-toggle a {
