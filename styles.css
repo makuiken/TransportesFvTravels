@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans&display=swap');
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #00628B;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: #ccd5e6;
+    padding: 20px;
+    text-align: center;
+}
+
+video, img {
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.title {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #e9eef6;
+    border-radius: 20px;
+}
+
+#info {
+    font-size: 2vh;
+    text-align: center;
+}
+
+h1  {
+    font-size: 3vh;
+    padding-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0;
+
+}
+
+nav {
+    padding-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #007bff;
+}
+main {
+    width: 100%;
+}
+
+.language-toggle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: ;
+}
+
+.language-toggle a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00628B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.language-toggle a:hover {
+    background-color: #333;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.chile-flag {
+    margin: 0 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+}
+
+.contact-title {
+    margin-right: 10px; /* Add margin between the title and logo */
+}
+
+.video-container {
+    text-align: center; /* Center the video horizontally */
+}
+  
+.video-container video {
+    display: inline-block;
+    max-width: 100%; /* Adjust the max-width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.numbers h2 {
+    margin: 10px 20px;
+}
+
+.info {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #ccd5e6;
+    padding: 25px;
+}
+
+
+#photos {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #photos img {
+    width: 100%; /* Ensure the images fill the grid items */
+    height: 100%;
+    max-width: 100% /* Ensure the images fill the grid items */
+
+  }
+
+@media (max-width: 500px) {
+    #photos img {
+        width: 100%; /* Make the images fill the available space in smaller screen sizes */
+    }
+}
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 3vh;
+    }
+    #info {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
